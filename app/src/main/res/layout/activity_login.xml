@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/neonazure"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/animationview2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        android:src="@drawable/sparks_annimation"/>
+
+
+    <ImageView
+        android:id="@+id/animationview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        android:src="@drawable/boomsprite_animation"/>
+    <ImageView
+        android:id="@+id/animationview1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/boomsprite_animation" />
+
+    <TextView
+        android:id="@+id/welcomemsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="Welcome!"
+        android:textColor="@color/green"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/usernametxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomemsg"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/redbird_fly"
+        android:hint="  Username"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/emailtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernametxt"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/boom132"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/passwordtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailtxt"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/win_ner32"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:id="@+id/welcometxtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordtxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:clickable="true"
+        android:text="Tap the bird to confirm!"
+        android:textAlignment="center"
+        android:textColor="@color/coral"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/bird_icon_btn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/passwordtxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="#00000000"
+        android:baselineAlignBottom="true"
+        android:clickable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/redbirdd150" />
+    <LinearLayout
+        android:id="@+id/animation_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bird_icon_btn"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

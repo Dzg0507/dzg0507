@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/redbird_fly"
+            android:icon="@drawable/redbird_fly"
+            android:title="@string/flyto_earn"/>
+        <item
+            android:id="@+id/spin_to_win"
+            android:icon="@drawable/spin_win"
+            android:title="@string/spin_win"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+    </group>
+</menu>
